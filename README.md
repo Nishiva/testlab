@@ -1,1 +1,11 @@
-# testlab
+.github/workflows/action1.yaml
+
+name: action1
+on: [push]
+jobs:
+  basicinfo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: printenv
+      - run: ls -ltr
